@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_xcf</name>
+    <creationDate>August 23th 2016</creationDate>
+    <copyright>Copyright (C) 2016. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Joomlakave</author>
+    <authorEmail>contact@joomlakave.com</authorEmail>
+    <authorUrl>http://joomlakave.com</authorUrl>
+    <version>1.0</version>
+    <description>Joomla Open graph protocol(OGP) extension</description>
+    <scriptfile>script.php</scriptfile>
+
+    <install>
+        <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+  		<schemas>
+    			<schemapath type="mysql" charset="utf8">sql/updates/mysql</schemapath>
+  		</schemas>
+  	</update>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>xcf.php</filename>
+    </files>
+    <administration>
+        <menu img="components/com_xcf/assets/images/s_com_xcf.png">COM_XCF</menu>
+        <submenu>
+            <menu link="option=com_xcf&amp;view=groups" view="groups" alt="XCF/Groups">COM_XCF_TITLE_GROUPS</menu>
+            <menu link="option=com_xcf&amp;view=fields" view="fields" alt="XCF/Fields">COM_XCF_TITLE_FIELDS</menu>
+        </submenu>
+        <files folder="admin">
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>layouts</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>xcf.php</filename>
+        </files>
+        <languages folder="languages/admin">
+            <language tag="en-GB">en-GB/en-GB.com_xcf.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_xcf.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

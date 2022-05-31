@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>pkg_xcf</name>
+	<packagename>xcf</packagename>
+	<creationDate>August 23th 2016</creationDate>
+	<packager>JoomlaKave</packager>
+	<copyright>(C) 2012 - 2016 Open Source Matters. All rights reserved.</copyright>
+	<packageremail>contact@joomlakave.com</packageremail>
+	<packagerurl>http://joomlakave.com</packagerurl>
+	<author>Joomlakave</author>
+	<authorEmail>joomlakave24@gmail.com</authorEmail>
+	<authorUrl>http://joomlakave.com</authorUrl>
+	<version>1.0</version>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<description>PKG_XCF_XML_DESCRIPTION</description>
+
+	<files>
+		<!-- The id for each extension is the element stored in the DB -->
+		<file type="component" id="com_xcf">com_xcf.zip</file>
+		<file type="plugin" id="plg_ajax_xcf" group="ajax">plg_ajax_xcf.zip</file>
+		<file type="plugin" id="plg_content_xcf" group="content">plg_content_xcf.zip</file>
+		<file type="plugin" id="plg_xcf_content" group="xcf">plg_xcf_content.zip</file>
+	</files>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.pkg_xcf.sys.ini</language>
+	</languages>
+	
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="XCF Update Site"><![CDATA[https://www.themexpert.com/index.php?option=com_digicom&task=responses&source=release&format=xml&provider=joomla&pid=114]]></server>
+	</updateservers>
+</extension>
