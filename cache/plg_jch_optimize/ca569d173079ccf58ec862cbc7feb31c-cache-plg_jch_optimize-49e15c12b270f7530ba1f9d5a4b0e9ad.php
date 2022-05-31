@@ -1,0 +1,2 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";s:0:"";s:6:"result";a:4:{s:9:"filemtime";i:1653877385;s:4:"etag";s:32:"e36469609ab640c153fe1aad20fc8e6c";s:4:"file";a:1:{i:0;s:41:"[[JCH_ca86fb28072d3f881b23625c7df56b2b]]
+";}s:9:"spritecss";a:0:{}}}
